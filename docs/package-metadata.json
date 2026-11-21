@@ -1,0 +1,65 @@
+{
+  "fastmcp-slim": {
+    "repository": "https://github.com/PrefectHQ/fastmcp",
+    "commit": "ffc65c7a8063bf66522fafd3d8db280d49a34e4e",
+    "inspected_path": "fastmcp_slim/pyproject.toml",
+    "requires_python": ">=3.11",
+    "license_expression": "Apache-2.0",
+    "note": "Dependency delegation inspected; no FastMCP source is redistributed or installed."
+  },
+  "llama-index-core": {
+    "version": "0.14.26",
+    "requires_python": "<4.0,>=3.11",
+    "license_expression": "MIT",
+    "requires_dist": [
+      "aiohttp<4,>=3.8.6",
+      "aiosqlite",
+      "banks<3,>=2.3.0",
+      "dataclasses-json",
+      "deprecated>=1.2.9.3",
+      "dirtyjson<2,>=1.0.8",
+      "eval-type-backport<0.3,>=0.2.0; python_version < \"3.10\"",
+      "filetype<2,>=1.2.0",
+      "fsspec>=2023.5.0",
+      "httpx",
+      "llama-index-workflows<3,>=2.14.0",
+      "nest-asyncio<2,>=1.5.8",
+      "networkx>=3.0",
+      "nltk>=3.9.3",
+      "numpy",
+      "pillow>=9.0.0",
+      "platformdirs",
+      "pydantic>=2.8.0",
+      "pyyaml>=6.0.1",
+      "requests>=2.31.0",
+      "setuptools>=80.9.0",
+      "sqlalchemy[asyncio]>=1.4.49",
+      "tenacity!=8.4.0,<10.0.0,>=8.2.0",
+      "tiktoken>=0.7.0",
+      "tinytag>=2.2.0",
+      "tqdm<5,>=4.66.1",
+      "typing-extensions>=4.5.0",
+      "typing-inspect>=0.8.0",
+      "wrapt"
+    ]
+  },
+  "llama-index-llms-ollama": {
+    "version": "0.12.0",
+    "requires_python": "<4.0,>=3.11",
+    "license_expression": "MIT",
+    "requires_dist": [
+      "llama-index-core<0.15,>=0.14.5",
+      "ollama>=0.5.3"
+    ]
+  },
+  "llama-index-embeddings-huggingface": {
+    "version": "0.9.0",
+    "requires_python": "<4.0,>=3.11",
+    "license_expression": "MIT",
+    "requires_dist": [
+      "huggingface-hub[inference]>=0.19.0",
+      "llama-index-core<0.15,>=0.13.0",
+      "sentence-transformers>=2.6.1"
+    ]
+  }
+}

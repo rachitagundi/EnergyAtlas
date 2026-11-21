@@ -1,0 +1,16 @@
+flowchart TD
+    Reports["Public energy reports"] --> Ingest["Extract text, pages and provenance"]
+    Ingest --> Index["Persistent chunks and vector index"]
+    Dataset["One public energy dataset"] --> Validate["Validate dates, units and regions"]
+    Validate --> DB["SQLite: statistics and source registry"]
+    User["User"] --> API["FastAPI: report Q&A and statistics"]
+    API --> Services["Shared Python services"]
+    Client["External MCP client"] --> MCP["FastMCP: search_reports and get_region_statistics"]
+    MCP --> Services
+    Services --> QA["LlamaIndex: retrieve and check evidence"]
+    QA -->|"search"| Index
+    QA -->|"ground answer in retrieved text"| LLM["Selected language model"]
+    Services -->|"parameterized read queries"| DB
+    LLM --> Citations["Validate citation IDs and render source links"]
+    Citations --> Answer["Answer with citations, or insufficient evidence"]
+    QA -->|"insufficient evidence"| Answer

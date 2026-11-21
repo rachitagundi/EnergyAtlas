@@ -1,0 +1,2 @@
+# Checkpoint 0A: pipeline wiring only. Python 3.12 is the tested target.
+llama-index-core==0.14.26

@@ -1,0 +1,34 @@
+{
+  "inspected_on": "2026-11-16",
+  "references": [
+    {
+      "repository": "https://github.com/patchy631/ai-engineering-hub",
+      "commit": "042aeb5067384981eeba6a07fa882f436bb1660d",
+      "copied_files": [
+        {
+          "upstream_path": "LICENSE",
+          "local_path": "third_party/ai-engineering-hub/LICENSE",
+          "sha256": "93123909818cf41b4c8b8804413a57e2224b7d828439bb53dccaf7c8482541e9"
+        },
+        {
+          "upstream_path": "simple-rag-workflow/workflow.py",
+          "local_path": "third_party/ai-engineering-hub/workflow.py",
+          "sha256": "bfbb340127b9e9c1685b011d357069002b30c582babcf55932505d4b649eb4e4"
+        },
+        {
+          "upstream_path": "simple-rag-workflow/README.md",
+          "local_path": "third_party/ai-engineering-hub/README.md",
+          "sha256": "295d7c77f163a51f3a4cc8b12f7f5f9f19b107de5dd7ae0852748dc0a500015f"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/PrefectHQ/fastmcp",
+      "commit": "ffc65c7a8063bf66522fafd3d8db280d49a34e4e"
+    },
+    {
+      "repository": "https://github.com/DataTalksClub/llm-zoomcamp",
+      "commit": "85c4833f649e6aae431c8e2dbdce58be0c53df2a"
+    }
+  ]
+}
